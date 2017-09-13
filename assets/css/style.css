@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*:focus {
+  outline: 0 !important;
+}
+
+button.button {
+  background-color: #f2353f;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 5px 20px;
+  border: 0;
+  font-family: 'Harabara Bold', sans-serif;
+  color: #fff;
+}
+button.button:hover {
+  background-color: #F54750;
+  cursor: pointer;
+}
+
+header {
+  background-image: url('../img/header_background.jpg');
+  background-size: cover;
+  background-position: center;
+
+  color: #fff;
+}
+
+header .header-wrapper {
+  /*height: 400px;*/
+  padding-bottom: 125px;
+}
+
+header .navbar {
+  padding: 30px;
+}
+
+header .navbar .menu a {
+  font-family: 'Harabara Bold', sans-serif;
+  font-size: 14px;
+  color: #fff;
+}
+header .navbar .menu .divider {
+  position: relative;
+  top: 0px;
+  font-weight: 300;
+  margin: 0 15px;
+}
+
+header .navbar .menu .menu-toogle {
+  position: relative;
+  margin-top: 10px;
+}
+
+header .navbar .logo {
+  height: 40px;
+}
+
+header .pizza-fade-slider {
+  max-height: 100%;
+  margin-top: 75px;
+}
+
+header .pizza-fade-slider .pizza-slider-item {
+  /*position: absolute;
+  left: 0;
+  top: 0;*/
+  opacity: 0;
+  -webkit-transition: 0.75s ease-in-out;
+  -moz-transition: 0.75s ease-in-out;
+  -o-transition: 0.75s ease-in-out;
+  transition: 0.75s ease-in-out;
+}
+
+header .pizza-fade-slider .pizza-slider-item:first-child {
+  opacity: 1;
+}
+
+header .pizza-fade-slider .pizza-name {
+  font-family: 'Harabara Bold', sans-serif;
+  font-size: 40px;
+}
+
+header .pizza-fade-slider .pizza-image {
+  width: 100%;
+}
