@@ -11,7 +11,7 @@ function pizza_fade_slider_callback() {
   let slide_number = parseInt($('.pizza-fade-slider').data('slide-number'));
   let slide_count = parseInt($('.pizza-fade-slider').data('slide-count'));
   let new_slide_number = (slide_number < slide_count - 1) ? slide_number + 1 : 0;
-  console.log(slide_count, new_slide_number);
+
   $('.pizza-fade-slider .pizza-slider-item').eq(slide_number).css('opacity', 0);
   setTimeout(function() {
     $('.pizza-fade-slider .pizza-slider-item').eq(slide_number).hide();
@@ -20,4 +20,13 @@ function pizza_fade_slider_callback() {
   }, 750)
 
   $('.pizza-fade-slider').data('slide-number', new_slide_number);
+}
+
+function menu_slider_init(params) {
+  let slider = params.slider;
+  let wrapper = slider.find('.menu-slider-wrapper');
+  let slideCount = wrapper.find('.menu-slider-item').length
+
+  wrapper.css('width', slideCount * 100 + '%');
+  $('.menu-slider .menu-slider-wrapper .menu-slider-item').css('width', (100 / slideCount) + '%');
 }

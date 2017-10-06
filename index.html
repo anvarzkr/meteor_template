@@ -6,17 +6,25 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>МЕТЕОР</title>
 
+  <!-- SLICK -->
+  <link rel="stylesheet" type="text/css" href="assets/css/slick/slick.css"/>
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/slick/slick-theme.css"/> -->
+  <!-- /SLICK -->
+
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/slider.css">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
   <script src="assets/js/main.js"></script>
   <script src="assets/js/jquery-3.2.1.min.js"></script>
   <script src="assets/js/slider.js"></script>
+  <script src="assets/js/slick.min.js"></script>
 </head>
 <body>
 
-  <header>
+  <header id="header">
     <div class="navbar">
       <div class="container">
         <div class="logo">
@@ -67,9 +75,146 @@
     </div>
   </header>
 
+  <section id="menu">
+    <div class="container">
+      <h2 class="text-center my-4">Космическое меню</h2>
+      <div class="menu-slider col-12" id="menu-slider">
+        <div class="menu-slider-wrapper">
+          <div class="menu-pizzas-item-wrapper">
+            <a href="category.html">
+              <div class="menu-pizzas-item text-center">
+                <div class="title">Чертовка</div>
+                <div class="menu-pizzas-item-image-wrapper col-12">
+                  <img src="assets/img/pizza.png" class="menu-pizzas-item-image mx-auto" alt="">
+                </div>
+                <div class="menu-pizzas-item-description">
+                  <div class="menu-pizzas-item-ingredients">
+                    Состав, состав, состав
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="menu-pizzas-item-wrapper">
+            <a href="category.html">
+              <div class="menu-pizzas-item text-center">
+                <div class="title">Чертовка</div>
+                <div class="menu-pizzas-item-image-wrapper col-12">
+                  <img src="assets/img/pizza.png" class="menu-pizzas-item-image mx-auto" alt="">
+                </div>
+                <div class="menu-pizzas-item-description">
+                  <div class="menu-pizzas-item-ingredients">
+                    Состав, состав, состав
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="menu-pizzas-item-wrapper">
+            <a href="category.html">
+              <div class="menu-pizzas-item text-center">
+                <div class="title">Чертовка</div>
+                <div class="menu-pizzas-item-image-wrapper col-12">
+                  <img src="assets/img/pizza.png" class="menu-pizzas-item-image mx-auto" alt="">
+                </div>
+                <div class="menu-pizzas-item-description">
+                  <div class="menu-pizzas-item-ingredients">
+                    Состав, состав, состав
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="menu-pizzas-item-wrapper">
+            <a href="category.html">
+              <div class="menu-pizzas-item text-center">
+                <div class="title">Чертовка</div>
+                <div class="menu-pizzas-item-image-wrapper col-12">
+                  <img src="assets/img/pizza.png" class="menu-pizzas-item-image mx-auto" alt="">
+                </div>
+                <div class="menu-pizzas-item-description">
+                  <div class="menu-pizzas-item-ingredients">
+                    Состав, состав, состав
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="menu-pizzas-item-wrapper">
+            <a href="category.html">
+              <div class="menu-pizzas-item text-center">
+                <div class="title">Чертовка</div>
+                <div class="menu-pizzas-item-image-wrapper col-12">
+                  <img src="assets/img/pizza.png" class="menu-pizzas-item-image mx-auto" alt="">
+                </div>
+                <div class="menu-pizzas-item-description">
+                  <div class="menu-pizzas-item-ingredients">
+                    Состав, состав, состав
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="menu-pizzas-item-wrapper">
+            <a href="category.html">
+              <div class="menu-pizzas-item text-center">
+                <div class="title">Чертовка</div>
+                <div class="menu-pizzas-item-image-wrapper col-12">
+                  <img src="assets/img/pizza.png" class="menu-pizzas-item-image mx-auto" alt="">
+                </div>
+                <div class="menu-pizzas-item-description">
+                  <div class="menu-pizzas-item-ingredients">
+                    Состав, состав, состав
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="menu-pizzas-item-wrapper">
+            <a href="category.html">
+              <div class="menu-pizzas-item text-center">
+                <div class="title">Чертовка</div>
+                <div class="menu-pizzas-item-image-wrapper col-12">
+                  <img src="assets/img/pizza.png" class="menu-pizzas-item-image mx-auto" alt="">
+                </div>
+                <div class="menu-pizzas-item-description">
+                  <div class="menu-pizzas-item-ingredients">
+                    Состав, состав, состав
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu">
+    <div class="container">
+      <h2 class="text-center my-4 py-4">Как это работает</h2>
+      <div class="section-text">
+        Вот так мы работаем. Тут картинки всякие, тексты. В общем как-то так.
+      </div>
+    </div>
+  </section>
+
   <script type="text/javascript">
     pizza_fade_slider_init();
+    // menu_slider_init($('#menu-slider'));
+    $('.menu-slider-wrapper').slick({
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      prevArrow: '<button class="fa fa-2x fa-arrow-circle-left slider-arrow slider-arrow-left" aria-hidden="true"></button>',
+      nextArrow: '<button class="fa fa-2x fa-arrow-circle-right slider-arrow slider-arrow-right" aria-hidden="true"></button>',
+
+    });
   </script>
+
+  <footer>
+
+  </footer>
 
 </body>
 </html>
